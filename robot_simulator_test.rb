@@ -134,7 +134,6 @@ class RobotSimulatorTest < Minitest::Test
   end
 
   def test_instruct_robot
-    skip
     robot = Robot.new
     simulator.place(robot, x: -2, y: 1, direction: :east)
     simulator.evaluate(robot, 'RLAALAL')
