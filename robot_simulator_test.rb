@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 gem 'minitest', '>= 5.0.0'
 require 'minitest/autorun'
-require_relative 'robot_simulator'
+require_relative 'robot'
+require_relative 'simulator'
 
 class RobotTurningTest < Minitest::Test
   attr_reader :robot
@@ -116,17 +117,14 @@ class RobotSimulatorTest < Minitest::Test
   end
 
   def test_instructions_for_turning_left
-    skip
     assert_equal [:turn_left], simulator.instructions('L')
   end
 
   def test_instructions_for_turning_right
-    skip
     assert_equal [:turn_right], simulator.instructions('R')
   end
 
   def test_instructions_for_advancing
-    skip
     assert_equal [:advance], simulator.instructions('A')
   end
 
