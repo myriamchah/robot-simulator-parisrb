@@ -7,8 +7,9 @@ class Simulator
     when 'R'
       [:turn_right]
     when 'A'
-      [:advance]
+    [:advance]
     end
   end
 end
+
 
